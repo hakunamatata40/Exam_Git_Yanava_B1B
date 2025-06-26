@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - YANAVA Motors</title>
+    <meta name="description" content="Contactez YANAVA Motors, votre concessionnaire automobile à Yaoundé, Cameroun. Notre équipe est à votre disposition pour répondre à toutes vos questions.">
+    
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/charte.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="YANAVA Motors Logo">
+                <span>YANAVA Motors</span>
+            </a>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact-hero.jpg');">
+        <div class="hero-content">
+            <h1 class="hero-title animate">Contactez-nous</h1>
+            <p class="hero-subtitle animate delay-1">Notre équipe est à votre disposition pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <h2 class="section-title animate">Prenez Contact avec YANAVA Motors</h2>
+            
+            <div class="contact-container animate" data-animation="fadeIn">
+                <div class="contact-info">
+                    <h2>Nos Coordonnées</h2>
+                    <p>N'hésitez pas à nous contacter par téléphone, email ou en vous rendant directement dans notre showroom à Yaoundé.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>Rue 1.234, Quartier Bastos<br>Yaoundé, Cameroun</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+237 6 99 99 99 99<br>+237 2 22 22 22 22</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>yanavadieudonne@gmail.com<br>contact@yanavamotors.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Heures d'Ouverture</h3>
+                            <p>Lundi - Vendredi: 8h00 - 18h00<br>Samedi: 9h00 - 15h00<br>Dimanche: Fermé</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links" style="justify-content: flex-start; margin-top: var(--space-md);">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Envoyez-nous un Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nom Complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="info">Demande d'information</option>
+                                <option value="test-drive">Demande d'essai</option>
+                                <option value="quote">Demande de devis</option>
+                                <option value="service">Service après-vente</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="map-section animate" data-animation="fadeIn">
+        <div class="container">
+            <h2 class="section-title">Trouvez-nous</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.623674242856!2d11.518734614757993!3d3.868989397202622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcdee5d5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sYaound%C3%A9%2C%20Cameroun!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr" width="100%" height="450" style="border:0; border-radius: var(--border-radius-lg);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="section cta" style="background-color: var(--secondary-color); color: white;">
+        <div class="container">
+            <div class="animate" data-animation="fadeIn">
+                <h2 class="section-title" style="color: white;">Prêt à Visiter Notre Showroom?</h2>
+                <p class="text-center" style="max-width: 700px; margin: 0 auto var(--space-xl);">Notre équipe de conseillers vous attend pour vous faire découvrir notre gamme de véhicules et répondre à toutes vos questions.</p>
+                <div class="text-center">
+                    <a href="#" class="btn">Voir les heures d'ouverture</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">YANAVA Motors</a>
+                <p>Votre concessionnaire automobile de confiance à Yaoundé, Cameroun. Nous nous engageons à vous offrir les meilleurs véhicules et services.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Nos Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Véhicules Neufs</a></li>
+                    <li><a href="#">Véhicules d'Occasion</a></li>
+                    <li><a href="#">Financement</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Vente de Véhicules</a></li>
+                    <li><a href="#">Entretien & Réparation</a></li>
+                    <li><a href="#">Pièces de Rechange</a></li>
+                    <li><a href="#">Contrôle Technique</a></li>
+                    <li><a href="#">Assistance Routière</a></li>
+                    <li><a href="#">Location de Voitures</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Abonnez-vous à notre newsletter pour recevoir nos offres spéciales et actualités.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2023 YANAVA Motors. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- GSAP pour les animations avancées (optionnel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</body>
+</html>
